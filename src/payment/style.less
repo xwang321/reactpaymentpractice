@@ -1,0 +1,65 @@
+@import url("../styles/variable.less");
+
+.a {
+    &-pay {
+      width:1208px;
+      margin: 0 auto;
+      margin-top:75px;
+      .logodirection{
+          display: flex;
+          justify-content: center;
+          margin-bottom: 58px;
+          .logo {
+            width: 185px;
+            cursor: pointer;
+          }
+        }
+      .paytype {
+          display:flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          user-select: none;
+          font-size:14px;
+          margin-bottom:30px;
+      }
+      .paytype .radio::before{
+          margin-left: 20px;
+      }
+      .recharge{
+          font-size:14px;
+      }
+      .recharge input{
+          border: 1px solid #dadce0;
+          width: 200px;
+          height: 30px;
+          outline: none;
+          margin:25px;
+      }
+      .bank-item {
+          border: 1px solid #dadce0;
+          padding: 12px 25px;
+          cursor: pointer;
+          border-radius: 4px;
+          text-align: center;
+      }
+      .bank-item.activated {
+          background: #18A3C9;
+          border: 1px solid #18A3C9;
+          color: #fff;
+      }
+      .bank {
+          display: grid;
+          grid-auto-flow: row;
+          grid-gap: 25px;
+          margin: 30px 0px 95px 0px;
+          grid-template-columns: repeat(auto-fill, 180px);
+      }
+      button{
+        color:#fff;
+      }
+      .buttonDirection{
+        display: flex;
+        justify-content: center;
+      }
+    }
+}
